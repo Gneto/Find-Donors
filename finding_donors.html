@@ -13491,8 +13491,7 @@ High Variance - the prediction model gets unstabe with a very small variance in 
 Low Bias - a highly complicated Decision tree tends to have a low bias which makes it difficult for the model to work with new data.
 <a href="https://www.quora.com/What-are-the-disadvantages-of-using-a-decision-tree-for-classification">https://www.quora.com/What-are-the-disadvantages-of-using-a-decision-tree-for-classification</a></p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?</p>
-<p><strong>Answer: </strong> I think this model a good candidate because it is used to determine the course of action. Each branch of the tree represents a possible decision, occurence or relaction.
-Decision Trees can be used for both Classification and Regression.</p>
+<p><strong>Answer: </strong> I think this model a good candidate because it is used to determine the course of action. Each branch of the tree represents a possible decision, occurence or relaction. As is a hierarchical struture that using leaves and ramifications, and dataset have pre-defined variables, I think also this model is indicate.</p>
 <p>2) Support Vector Machines (SVM)</p>
 <p>Describe one real-world application in industry where the model can be applied.</p>
 <p><strong>Answer: </strong> Some common applications of SVM are:
@@ -13502,10 +13501,9 @@ Face detection, Text and hypertext categorization, Classification of images, Bio
 <p><strong>Answer: </strong> There are four main advantages: Firstly it has a regularisation parameter, which makes the user think about avoiding over-fitting. Secondly it uses the kernel trick, so you can build in expert knowledge about the problem via engineering the kernel. Thirdly an SVM is defined by a convex optimisation problem (no local minima) for which there are efficient methods (e.g. SMO). Lastly, it is an approximation to a bound on the test error rate, and there is a substantial body of theory behind it which suggests it should be a good idea.
 <a href="https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm</a></p>
 <p>What are the weaknesses of the model; when does it perform poorly?</p>
-<p><strong>Answer: </strong> The weaknesses are that the theory only really covers the determination of the parameters for a given value of the regularisation and kernel parameters and choice of kernel. In a way the SVM moves the problem of over-fitting from optimising the parameters to model selection. Sadly kernel models can be quite sensitive to over-fitting the model selection criterion.
-<a href="https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm</a></p>
+<p><strong>Answer: </strong> The weaknesses are that the theory only really covers the determination of the parameters for a given value of the regularisation and kernel parameters and choice of kernel. In a way the SVM moves the problem of over-fitting from optimising the parameters to model selection. Sadly kernel models can be quite sensitive to over-fitting the model selection criterion. However, this model perform can poorly when the data is very bigger maybe can occour in us case. <a href="https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm</a></p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?</p>
-<p><strong>Answer: </strong> I think that the model is more efficient for classifier problem because we have clear margin of separation in data and maybe the accuracy is high for data. But the model doens't perform well if we have large data set because the training  time required is higher.</p>
+<p><strong>Answer: </strong> I think that the model is more efficient for classifier problem because we have clear margin of separation in data, this as, people who donated and people who didn't donated and maybe seems to be some features related of icome. But the model doens't perform well if we have large data set because the training  time required is higher.</p>
 <p>3) AdaBoost</p>
 <p>Describe one real-world application in industry where the model can be applied.</p>
 <p><strong>Answer: </strong> The model can be used of Remote sensing, Person recognition, One vs. all recognition and Medicine.
@@ -13514,10 +13512,10 @@ Face detection, Text and hypertext categorization, Classification of images, Bio
 <p><strong>Answer: </strong> Robust performance on outliers, reduction of variance to avoid over-fitting, requires little addiction parameter tuning, accommodates high on-linear interactions, does feature selection resulting in relatively simple classifier.
 <a href="http://phirilytics.blogspot.com/2017/07/ensemble-model-strengthsand-some.html">http://phirilytics.blogspot.com/2017/07/ensemble-model-strengthsand-some.html</a></p>
 <p>What are the weaknesses of the model; when does it perform poorly?</p>
-<p><strong>Answer: </strong> Include; over-fitting, outlier influence, revision on iteration stopping point, and lack of transparency due to the complexity, sensitive to noisy data.
+<p><strong>Answer: </strong> Include; over-fitting, outlier influence, revision on iteration stopping point, and lack of transparency due to the complexity, sensitive to noisy data. Outlier in the dataset can be impair performance.
 <a href="http://phirilytics.blogspot.com/2017/07/ensemble-model-strengthsand-some.html">http://phirilytics.blogspot.com/2017/07/ensemble-model-strengthsand-some.html</a></p>
 <p>What makes this model a good candidate for the problem, given what you know about the data?</p>
-<p><strong>Answer: </strong> I believe that model can be combined with the others model above because there is a combination of models that work together and generated an even stronger predictive model.</p>
+<p><strong>Answer: </strong> I believe that model can be combined with the others model above because there is a combination of models that work together and generated an even stronger predictive model. I think as the dataset is clean this model is indicated, otherwise could create one pre-processing of the dataset before.</p>
 
 </div>
 </div>
@@ -14911,6 +14909,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <p><strong>Answer: </strong>
 I believe that the model AdaBoostClassifier is more highest because the F-score on Testing Set and Accuracy Score on Testing set the model is greater than others. This model is faster, but the F score on the testing when 100% of the training data is used the model AdaBoostClassifier loses for Decision Tree.
 The model SVC had the higest time for training and loses for all models that I chosed, however, I chose AdaBoostClassifier because it combine of several base estimator.</p>
+<p>As we want to work whit 100% of the dataset, we can maximize of performance without compromissing the training and the testing and I think that the AdaBoostClassifier is more indicate, also we need classifier the people that can donate for sense this model had more Accuracy Score.</p>
 
 </div>
 </div>
@@ -14934,8 +14933,8 @@ The model SVC had the higest time for training and loses for all models that I c
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> I chosen the model AdaBoostClassifier Methods for the work. I think is more indicate for analysis because the model can help us to work of categorical data and it are made up of multiple classifier models and whose output is combined result of output of those classifier models.</p>
-<p>The date set are classifier base on a lot of classifiers and separed in two categories 0 (non-donate) and 1 (donors). We will built the model for people classifier that can able donor. Therefore can take a new predict with another data, based on training before.</p>
+<p><strong>Answer: </strong> AdaBoostClassifier combines a set of weak classifiers to form a strong classifier. Its function is to find a set of characteristics that will compose the strong classifier providing a better classification of the dataset and get an accuracy better.</p>
+<p>The model is trained utilizing the 80% of all data and 20% for will be testing the training. It will be able classifier people that can be donate or not according in data set. Therefore can take a new predict with another data, based on training before.</p>
 
 </div>
 </div>
